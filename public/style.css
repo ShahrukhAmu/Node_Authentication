@@ -1,0 +1,158 @@
+/* public/style.css */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Login form style */
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+form h1{
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form label{
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+button{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+form button{
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+form button[type="submit"]:hover {
+    background-color: #0062cc;
+}
+
+a{
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover{
+    color: #0062cc;
+}
+
+/* Set the height of the body to the full height of the viewport */
+body{
+    height: 100vh;
+}
+
+/* Header section */
+header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Navigation links */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    background-image: url('hero.jpg');
+    height: 3vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Hero heading  */
+.hero h1{
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+}
+
+/* About section  */
+.about{
+    background-color: #fff;
+    padding: 50px;
+}
+
+/* About heading  */
+.about h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* About text  */
+.about p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Footer section  */
+footer{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer links  */
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <% if(user){%>
+        <h1>Welcome <%= user.email%>
+        </h1>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <section class="about">
+            <h2>Welcome</h2>
+            <p>To The App.</p>
+        </section>
+
+        <footer>
+            <p>Copyright &copy; 2023
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms &amp; Conditions</a>
+            </p>
+        </footer>
+
+        <form action="/logout" method="get">
+            <button type="submit">Log out</button>
+        </form>
+
+        <form action="/reset-password" method="get">
+            <button type="submit">Reset Password</button>
+        </form>
+        <% } else { %>
+        <div class="special">
+            <h1>Log In To Your Account</h1>
+            <p class="message">
+                <%= message%>
+            </p>
+
+            <button type="submit"><a href="/login">Login</a></button>
+            <button><a href="/signup">Sign Up</a></button>
+        </div>
+       <% }%>
+    </div>
+</body>
+</html>
